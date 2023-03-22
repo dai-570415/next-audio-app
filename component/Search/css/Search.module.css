@@ -1,0 +1,22 @@
+.searchWrap {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+
+.searchText {
+    width: 56px;
+    height: 56px;
+    border: none;
+    background: #fff url("../../../public/img/common/search.svg") no-repeat 17px center;
+    background-size: 24px 24px;
+    transition: all 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchText:focus {
+    width: 270px;
+    padding: 20px 0 20px 60px;
+}

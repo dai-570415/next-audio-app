@@ -1,0 +1,47 @@
+{
+  "artist": [ 
+    { "id": 1, "slug": "sample1", "resource": "リソース元が入ります", "image": "bgm1", "artist": "アーティスト名" }
+  ],
+  "audio": [
+    { 
+      "id": 1, 
+      "slug": "sample1",
+      "resource": "リソース元が入ります",
+      "name": "アルバム名1",
+      "image": "bgm1",
+      "artist": "アーティスト名",
+      "albam": [
+        {
+          "id": 1,
+          "song": "曲名1", 
+          "file": "bgm1"
+        },
+        {
+          "id": 2,
+          "song": "曲名2", 
+          "file": "bgm1"
+        }
+      ]
+    },
+    { 
+      "id": 2, 
+      "slug": "sample1",
+      "resource": "リソース元が入ります",
+      "name": "アルバム名2",
+      "image": "bgm2",
+      "artist": "アーティスト名",
+      "albam": [
+        {
+          "id": 1,
+          "song": "曲名1", 
+          "file": "bgm1"
+        },
+        {
+          "id": 2,
+          "song": "曲名2", 
+          "file": "bgm1"
+        }
+      ]
+    }
+  ]
+}

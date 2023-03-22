@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+    .innerHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+    @media screen and (min-width:480px) {
+        .innerHeader {
+            width: 375px;
+            margin: 0 auto;
+        }
+    }
+}

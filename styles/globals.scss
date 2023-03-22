@@ -1,0 +1,101 @@
+// font-family: 'Noto Sans JP', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+// font-family: 'Josefin Sans', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// font-family: 'Poppins', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    transition: .5s;
+    &:hover {
+        opacity: .7;
+    }
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+.title {
+    font-size: 16px;
+    width: calc(100% - 40px);
+    margin: 0 auto 32px;
+    @media screen and (min-width:480px) {
+        width: 375px;
+    }
+}
+
+.navWrap {
+    margin: 0 0 24px 0;
+    background: #F5F5F5;
+    .nav {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        padding: 10px 0;
+        li {
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+            margin: 0 8px 0 0;
+            a {
+                line-height: 1;
+            }
+            img {
+                display: block;
+            }
+        }
+    }
+    @media screen and (min-width:480px) {
+        .nav {
+            width: 375px;
+        }
+    }
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #B3B3B3;
+    width: 180px;
+    margin: 0 auto;
+    padding: 14px;
+    border: 1px solid #B3B3B3;
+    border-radius: 60px;
+    position: relative;
+}
+.backBtn {
+    &::before {
+        content: "";
+        display: block;
+        background-image: url(../public/img/button/left_arrow_gray.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 4px;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 30px;
+        transform: translate(-50%, -50%);
+    }
+}

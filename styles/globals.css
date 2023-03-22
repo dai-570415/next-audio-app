@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+}
+a:hover {
+    opacity: 0.7;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.title {
+    font-size: 16px;
+    width: calc(100% - 40px);
+    margin: 0 auto 32px;
+}
+@media screen and (min-width: 480px) {
+    .title {
+        width: 375px;
+    }
+}
+
+.navWrap {
+    margin: 0 0 24px 0;
+    background: #F5F5F5;
+}
+.navWrap .nav {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.navWrap .nav li {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 8px 0 0;
+}
+.navWrap .nav li a {
+    line-height: 1;
+}
+.navWrap .nav li img {
+    display: block;
+}
+@media screen and (min-width: 480px) {
+    .navWrap .nav {
+        width: 375px;
+    }
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #B3B3B3;
+    width: 180px;
+    margin: 0 auto;
+    padding: 14px;
+    border: 1px solid #B3B3B3;
+    border-radius: 60px;
+    position: relative;
+}
+
+.backBtn::before {
+    content: "";
+    display: block;
+    background-image: url(../public/img/button/left_arrow_gray.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+}

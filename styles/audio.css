@@ -1,0 +1,70 @@
+.audioPage {
+    margin: 56px 0 0 0;
+}
+.audioPage .artistIntro {
+    margin: 0 auto 40px;
+    padding: 0 0 40px 0;
+    border-bottom: 10px solid #F5F5F5;
+}
+.audioPage .artistIntro .jacketImage {
+    display: block;
+    width: 230px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+.audioPage .artistIntro h3 {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto 20px;
+}
+.audioPage .artistDetail {
+    margin: 0 auto 40px;
+    padding: 0 0 40px 0;
+    border-bottom: 10px solid #F5F5F5;
+}
+.audioPage .artistDetail .innerArtistDetail {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 14px 0;
+    border-top: 1px solid #E9E8EB;
+    border-bottom: 1px solid #E9E8EB;
+}
+.audioPage .artistDetail .innerArtistDetail img {
+    display: block;
+    width: 76px;
+    height: 76px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 16px 0 0;
+    border-radius: 50%;
+}
+.audioPage .artistDetail .innerArtistDetail h3 {
+    font-size: 13px;
+    font-weight: bold;
+}
+.audioPage .audioList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.audioPage .audioList .audioItems {
+    width: 48%;
+    margin: 0 0 32px 0;
+}
+.audioPage .audioDetail {
+    margin: 0 0 40px 0;
+    padding: 0 0 40px 0;
+    border-bottom: 10px solid #F5F5F5;
+}
+@media screen and (min-width: 480px) {
+    .audioPage .audioList {
+        width: 375px;
+    }
+    .audioPage .artistDetail .innerArtistDetail {
+        width: 375px;
+    }
+}
