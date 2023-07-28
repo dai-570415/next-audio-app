@@ -3,7 +3,7 @@ import { useFetchArtist } from '../hooks/useFetchArtist';
 import { AudioTypes } from '../types/types';
 import { ArtistList } from '../component/ArtistList/ArtistList';
 
-const index = () => {
+const Index = () => {
     const { artists, isLoading, isError } = useFetchArtist();
 
     return (
@@ -38,4 +38,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default Index;
