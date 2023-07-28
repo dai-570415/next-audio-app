@@ -14,7 +14,8 @@ export const useFetchAudio = () => {
     const fetchAudio = () => {
         setIsLoading(true);
         axios
-            .get('http://localhost:3001/audio')
+            // .get('http://localhost:3001/audio')
+            .get('https://script.google.com/macros/s/AKfycby5EReWvKeU1V6YJ3LrWbBHnGGlytnHkj-5CvGvgcE1jlwzcyCG01aSYTuoNLCUzayO/exec')
             .then(result => {
                 const audio = result.data.map((audio: AudioTypes) => ({
                     id: audio.id,

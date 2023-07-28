@@ -14,7 +14,8 @@ export const useFetchArtist = () => {
     const fetchArtist = () => {
         setIsLoading(true);
         axios
-            .get('http://localhost:3001/artist')
+            // .get('http://localhost:3001/artist')
+            .get('https://script.google.com/macros/s/AKfycbygkkc4j468CF848GEk4XF_0sgQHPLwHNwXWnODxiRrteY16xsUIu2yDtShAcWq51o/exec')
             .then(result => {
                 const audio = result.data.map((audio: AudioTypes) => ({
                     id: audio.id,
